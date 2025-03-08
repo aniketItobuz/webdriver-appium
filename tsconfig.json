@@ -28,6 +28,7 @@
         "test",
         "wdio.nestAndroid.conf.ts",
         "wdio.testApp.conf.ts",
-        "wdio.nestIOS.conf.ts"
+        "wdio.nestIOS.conf.ts",
+        "wdio.combine.conf.ts",
     ]
 }
