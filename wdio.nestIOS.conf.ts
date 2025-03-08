@@ -8,7 +8,7 @@ export const config: WebdriverIO.Config = {
   capabilities: [
       {
           platformName: 'iOS',
-          'appium:deviceName': 'iPhone 16',
+          'appium:deviceName': 'iPhone 16 Pro Max',
           'appium:platformVersion': '18.1',
           'appium:automationName': 'XCUITest',
           'appium:app': '/Volumes/ANI/appium/app/neststartertemplateapp.app',
