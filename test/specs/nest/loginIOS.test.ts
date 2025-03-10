@@ -15,10 +15,12 @@ describe("Checking login functionality in nest app", () => {
       await email.setValue(Email);
       const password = await $("~login-password-input");
       await password.setValue(Password);
+      const loginTitle = await $("~login-title");
+      await loginTitle.click();
       const loginButton = await $("~login-submit-button");
       await loginButton.click();
     } else {
       throw new Error("Unsupported platform detected");
     }
   });
-});
+}); 
