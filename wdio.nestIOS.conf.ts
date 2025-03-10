@@ -9,9 +9,9 @@ export const config: WebdriverIO.Config = {
       {
           platformName: 'iOS',
           'appium:deviceName': 'iPhone 16 Pro Max',
-          'appium:platformVersion': '18.1',
+          'appium:platformVersion': '18.3',
           'appium:automationName': 'XCUITest',
-          'appium:app': '/Volumes/ANI/appium/app/neststartertemplateapp.app',
+          'appium:app': '/Volumes/data/webdriver.io/webdriver-appium/app/neststartertemplateapp.app',
           'appium:noReset': true,
           'appium:newCommandTimeout': 90000,
           'appium:autoGrantPermissions': true,  // ✅ Auto-grant permissions
@@ -31,7 +31,7 @@ export const config: WebdriverIO.Config = {
       timeout: 60000
   },
 
-  afterTest: async function (test, context, { error, passed }) {
+  afterTest: async function (test, { passed }) {
       if (!passed) {
           const screenshotPath = `./screenshots/${test.title.replace(/ /g, '_')}.png`;
           await browser.saveScreenshot(screenshotPath);

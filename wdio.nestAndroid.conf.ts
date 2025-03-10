@@ -8,10 +8,10 @@ export const config: WebdriverIO.Config = {
     capabilities: [
         {
             platformName: 'Android',
-            'appium:deviceName': 'Pixel 9 Pro',
+            'appium:deviceName': 'Pixel 8 Pro',
             'appium:platformVersion': '15',
             'appium:automationName': 'UiAutomator2',
-            'appium:app': '/Volumes/ANI/appium/app/nest.apk',
+            'appium:app': '/Volumes/data/webdriver.io/webdriver-appium/app/nest.apk',
             'appium:noReset': true,
             'appium:newCommandTimeout': 30000,
             'wdio:maxInstances': 1,   
