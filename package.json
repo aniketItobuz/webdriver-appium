@@ -21,5 +21,8 @@
     "test:nest-ios": "npx wdio wdio.nestIOS.conf.ts",
     "test:combine": "npx wdio wdio.combine.conf.ts",
     "start": "npm run test:testApp && npm run test:nest-android && npm run test:nest-ios"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.33.0"
   }
 }
